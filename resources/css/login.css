@@ -1,3 +1,6 @@
+
+/* --- General CSS --- */
+
 html, body
 {
   width: 100%;
@@ -40,27 +43,6 @@ html, body
   box-shadow:0 0 0 .2rem rgba(247, 112, 80);
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (min-width: 375px) (max-width: 812px) { 
-	.login-box
-	{
-		border-radius: 20px;
-		width: 100%;
-		}
-	}
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { }
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
-
 input[ type=number ]::-webkit-inner-spin-button,
 input[ type=number ]::-webkit-outer-spin-button
 {
@@ -71,4 +53,71 @@ input[ type=number ]::-webkit-outer-spin-button
 input[ type=number ]
 {
   -moz-appearance:textfield;
+}
+
+/* --- Media Querys --- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px)
+{
+
+  .login-box
+	{
+		width: 400px;
+	}
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px)
+{
+
+  .login-box
+	{
+		width: 200%;
+	}
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px)
+{
+
+  .login-box
+	{
+		width: 85%;
+    height: 22vh;
+    font-size: 24px;
+	}
+
+  #login-form
+  {
+    margin-top: 10% !important;
+  }
+
+  img
+  {
+    margin-top: 10% !important;
+  }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px)
+{
+
+  .login-box
+	{
+		width: 60%;
+	}
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px)
+{
+  .login-box
+	{
+		width: 60%;
+	}
 }
